@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    padding: 10px;
+}
+
+.app {
+    width: 100%;
+    max-width: 540px;
+    margin: 100px auto;
+    padding: 40px 30px 70px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.3);
+}
+
+.app h2 {
+    display: flex;
+    align-items: center;
+}
+
+.app p {
+    font-size: .2rem;
+    color: #9B9D9F;
+}
+
+
+.app h2 .icon {
+    margin-left: 10px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+
+
+.author {
+    color: #00BA00;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #00BA00;
+    border-radius: 30px;
+    color: white;
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 3px 8px 12px 50px;
+    user-select: none;
+    position: relative;
+    max-width: 510px;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(img/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 0px;
+    left: 8px;
+}
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(img/checked.png);
+}
+
+ ul li .close{
+    border-radius: 50%;
+    color: red;
+    position: absolute;
+    right: 0;
+    top: -2px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul li .close:hover {
+    background: #edeef0;
+}
+
+/*media query*/
+@media screen and (max-width: 480px) {
+  button {
+    padding: 16px 30px;
+  }
+  
+  ul li .close{
+    color: red;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul li {
+    max-width: 355px;
+}
+
+ul li .close:hover {
+    background: #edeef0;
+}
+  
+}

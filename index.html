@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="in">
+<head>
+    <meta charset="UTF-8">
+    <!-- my css -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap" rel="stylesheet">
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <title>To-do List</title>
+</head>
+<body>
+    
+    <div class="container">
+       <div class="app">
+         <h2>Catatan Saya <i class="icon" data-feather="book-open"></i></h2>
+         <p>Rewritten Code by <span class="author">Fadhil Aditya.</span></p>
+         <div class="row">
+           <input type="text" id="input-user" placeholder="Tulis Catatan Anda">
+           <button onclick="addTask()">Add</button>
+         </div>
+         <ul id="task">
+        
+         </ul>
+       </div>
+    </div>
+    
+    
+    
+    <!-- feather icons -->
+    <script>
+      feather.replace()
+    </script>
+    
+    <!-- My JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
