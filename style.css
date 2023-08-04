@@ -27,7 +27,7 @@
 }
 
 .app p {
-    font-size: 1rem;
+    font-size: .5rem;
     color: #9B9D9F;
 }
 
@@ -50,7 +50,7 @@
 
 .author {
     color: #00BA00;
-    font-size: 1rem;
+    font-size: .5rem;
 }
 
 input {
